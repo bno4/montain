@@ -147,6 +147,28 @@ nav i:hover {
           transform: scale(1.9);
 }
 
+@media screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  header p {
+    line-height: 20px;
+    font-size: 0.7rem;
+  }
+  header nav {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  header nav li {
+    padding: 10px;
+    font-size: 0.7rem;
+  }
+  .nav-icons {
+    display: none;
+  }
+}
 .section1,
 .section2 {
   width: 85%;
@@ -245,6 +267,28 @@ nav i:hover {
   font-size: 0.8rem;
 }
 
+@media screen and (max-width: 768px) {
+  .section1,
+  .section2 {
+    width: 90%;
+  }
+  .section1 {
+    padding: 20px 20px;
+  }
+  .section2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 0;
+  }
+  .section2-container {
+    padding: 20px;
+  }
+}
 button {
   outline: 0;
   background: transparent;
@@ -372,4 +416,17 @@ form button {
   padding: 20px;
   border: 1px solid #696969;
   border-radius: 50%;
+}
+
+@media screen and (max-width: 768px) {
+  .contact {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }/*# sourceMappingURL=index.css.map */
