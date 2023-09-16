@@ -2,4 +2,4 @@
 
 ## sass training
 
-maquette desktop et mobile © From Scratch (https://fromscratch.podia.com/)
+maquettes desktop et mobile / img © From Scratch (https://fromscratch.podia.com/)
