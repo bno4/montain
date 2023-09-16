@@ -89,50 +89,62 @@ header {
 
 nav {
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 70% 30%;
   position: absolute;
   bottom: 0;
   width: 85%;
   max-width: 1000px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.302);
+  background: rgba(255, 255, 255, 0.182);
   text-transform: uppercase;
   font-family: "Inter";
+  padding: 0;
 }
 nav ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
 }
 nav li {
   background: transparent;
-  height: 50px;
-  padding: 20px;
+  padding: 20px 20px;
   -webkit-transition: all 150ms;
   transition: all 150ms;
-  color: white;
+  color: rgba(255, 255, 255, 0.709);
+  font-size: 13px;
+  line-height: 23px;
+  letter-spacing: 1.2px;
 }
 nav .nav-text li {
-  font-size: 0.9rem;
+  height: 100%;
 }
 nav .nav-text li:hover {
-  background: rgba(0, 0, 0, 0.116);
+  background: rgba(255, 255, 255, 0.745);
   color: black;
+  height: 100% auto;
 }
 nav .nav-icons {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav i {
   color: white;
+  font-size: 1.2rem;
   -webkit-transition: 200ms;
   transition: 200ms;
 }
 nav i:hover {
-  -webkit-transform: scale(1.7);
-          transform: scale(1.7);
+  -webkit-transform: scale(1.9);
+          transform: scale(1.9);
 }
 
 .section1,
@@ -268,7 +280,7 @@ form {
       -ms-flex-align: left;
           align-items: left;
   gap: 30px;
-  padding: 40px;
+  padding: 30px;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
   letter-spacing: 1px;
@@ -316,7 +328,6 @@ form button {
   -webkit-box-align: left;
       -ms-flex-align: left;
           align-items: left;
-  gap: 30px;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
   letter-spacing: 1px;
@@ -324,11 +335,14 @@ form button {
   font-size: 0.8rem;
 }
 .coordinates__text {
-  padding: 40px;
+  padding: 30px;
   display: grid;
   grid-template-columns: 30% 70%;
   text-align: left;
   border-bottom: solid 1px rgba(0, 0, 0, 0.116);
+}
+.coordinates__text h3 {
+  font-size: 0.7rem;
 }
 .coordinates__text p {
   font-family: "Merriweather", serif;

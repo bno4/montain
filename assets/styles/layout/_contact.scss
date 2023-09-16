@@ -13,7 +13,7 @@ form {
   justify-content: center;
   align-items: left;
   gap: 30px;
-  padding: 40px;
+  padding: 30px;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
   letter-spacing: 1px;
@@ -54,21 +54,21 @@ form button {
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   border-left: solid 1px $color3;
-
   align-items: left;
-  gap: 30px;
-
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
   letter-spacing: 1px;
   color: $color4;
   font-size: 0.8rem;
   &__text {
-    padding: 40px;
+    padding: 30px;
     display: grid;
     grid-template-columns: 30% 70%;
     text-align: left;
     border-bottom: solid 1px $color3;
+    h3 {
+      font-size: 0.7rem;
+    }
     p {
       font-family: "Merriweather", serif;
       text-transform: lowercase;

@@ -40,44 +40,52 @@ header {
 }
 nav {
   display: grid;
-  grid-template-columns: 75% 25%;
+  grid-template-columns: 70% 30%;
   position: absolute;
   bottom: 0;
   width: 85%;
   max-width: 1000px;
   margin: 0 auto;
-  background: rgba(255, 255, 255, 0.302);
+  background: rgba(255, 255, 255, 0.182);
   text-transform: uppercase;
   font-family: "Inter";
+  padding: 0;
 
   ul {
     list-style-type: none;
     display: flex;
+    align-items: center;
+    padding: 0;
   }
   li {
     background: transparent;
-    height: 50px;
-    padding: 20px;
+    padding: 20px 20px;
     transition: all 150ms;
-    color: white;
+    color: rgba(255, 255, 255, 0.709);
+    font-size: 13px;
+    line-height: 23px;
+    letter-spacing: 1.2px;
   }
   .nav-text {
     li {
-      font-size: 0.9rem;
+      height: 100%;
       &:hover {
-        background: $color3;
+        background: rgba(255, 255, 255, 0.745);
         color: black;
+        height: 100% auto;
       }
     }
   }
   .nav-icons {
     justify-content: flex-end;
+    align-items: center;
   }
   i {
     color: $color2;
+    font-size: 1.2rem;
     transition: 200ms;
     &:hover {
-      transform: scale(1.7);
+      transform: scale(1.9);
     }
   }
 }
