@@ -1,0 +1,93 @@
+.contact {
+  width: 85%;
+  max-width: 1000px;
+  margin: 20px auto;
+  background-color: $color2;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  gap: 30px;
+  padding: 40px;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
+  color: $color4;
+  font-size: 0.8rem;
+}
+form label,
+input,
+textarea {
+  display: block;
+  width: 100%;
+}
+label {
+  margin-bottom: 10px;
+}
+input,
+textarea {
+  min-height: 50px;
+  outline: 0;
+  border: 0.5px solid $color4;
+  border-radius: 3px;
+  padding: 20px;
+  resize: none;
+}
+
+form button {
+  width: 50%;
+  color: $color4;
+  border: 1px solid gray;
+  border-radius: 3px;
+  margin: 0;
+}
+.form {
+  border-bottom: solid 1px $color3;
+}
+
+.coordinates {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  border-left: solid 1px $color3;
+
+  align-items: left;
+  gap: 30px;
+
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
+  color: $color4;
+  font-size: 0.8rem;
+  &__text {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    text-align: left;
+    border-bottom: solid 1px $color3;
+    p {
+      font-family: "Merriweather", serif;
+      text-transform: lowercase;
+    }
+    ul {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      margin-top: -10px;
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 20px;
+        width: 20px;
+        padding: 20px;
+        border: 1px solid $color4;
+        border-radius: 50%;
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: "Inter";
+  src: url(../fonts/Inter/static/Inter-ExtraBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Merriweather";
+  src: url(../fonts/Merriweather/Merriweather-Light.ttf);
+}
+
+// colors
+$color1: rgba(0, 0, 0, 0.82);
+$color2: white;
+$color3: rgba(0, 0, 0, 0.116);
+$color4: #696969;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: url(../img/bg.jpg) center/cover fixed;
+}
+
+a {
+  text-decoration: none;
+  color: $color1;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Inter", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+h4 {
+  font-family: "Merriweather", serif;
+  font-size: 1rem;
+}
